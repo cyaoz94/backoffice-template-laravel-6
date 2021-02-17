@@ -1,0 +1,16 @@
+<?php
+
+namespace Custom\Controllers;
+
+use Custom\Resources\{{modelName}}Resource;
+use Custom\Models\{{modelName}};
+use App\Http\Controllers\CrudController;
+
+class {{modelName}}Controller extends CrudController
+{
+    public function __construct()
+    {
+        $this->modelClass = {{modelName}}::class;
+        $this->resourceClass = {{modelName}}Resource::class;
+    }
+}
